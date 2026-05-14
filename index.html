@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 2nd Anniversary, Papitaaaaa 💛</title>
+  <meta name="description" content="A love letter in code — Rajat to Pahal. 15 May 2026.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MUSIC -->
+<button id="musicBtn" aria-label="Toggle music">♪</button>
+<audio id="bgMusic" loop preload="auto">
+  <!-- RAJAT: drop your mp3 here and name it song.mp3 -->
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ═══════════════════  1 · HERO  ══════════════════════ -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-ambient"></div>
+  <div class="hero-body">
+    <p class="hero-date">15 · 05 · 2024 — ∞</p>
+    <h1 class="hero-h1">Happy 2nd Anniversary,<br>Papitaaaaa 💛</h1>
+    <p class="hero-quote">From your chikuu, with everything I have.</p>
+    <button class="hero-enter" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">Enter ♥</button>
+  </div>
+  <div class="hero-scroll"><span>scroll</span><i></i></div>
+</section>
+
+<!-- ═══════════════════  2 · OUR STORY  ════════════════ -->
+<section id="story" class="sec rv">
+  <div class="sec-inner">
+    <p class="sec-label">our beginning</p>
+    <h2 class="sec-title">Our Story</h2>
+    <hr class="sec-line">
+    <div class="letter-card">
+      <div class="letter-body" id="letterText"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════  3 · TIMER  ════════════════════ -->
+<section id="timer" class="sec rv">
+  <div class="sec-inner">
+    <p class="sec-label">counting every second</p>
+    <h2 class="sec-title">We've Been Us For...</h2>
+    <hr class="sec-line">
+    <div class="timer-row rv-children">
+      <div class="t-card"><div class="t-val" id="ty">0</div><div class="t-lbl">Years</div></div>
+      <div class="t-card"><div class="t-val" id="tmo">0</div><div class="t-lbl">Months</div></div>
+      <div class="t-card"><div class="t-val" id="td">0</div><div class="t-lbl">Days</div></div>
+      <div class="t-card"><div class="t-val" id="th">00</div><div class="t-lbl">Hours</div></div>
+      <div class="t-card"><div class="t-val" id="tmi">00</div><div class="t-lbl">Minutes</div></div>
+      <div class="t-card"><div class="t-val" id="ts">00</div><div class="t-lbl">Seconds</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════  4 · SLIDESHOW  ════════════════ -->
+<section id="slideshow" class="sec rv">
+  <div class="sec-inner">
+    <p class="sec-label">us, through the lens</p>
+    <h2 class="sec-title">Our Moments</h2>
+    <hr class="sec-line">
+    <div class="slide-container">
+      <div class="slide-track" id="slideTrack">
+        <div class="slide"><img src="img1.jpeg" alt="School days"></div>
+        <div class="slide"><img src="img3.jpeg" alt="Garba 1"></div>
+        <div class="slide"><img src="img4.jpeg" alt="Together"></div>
+        <div class="slide"><img src="img5.jpeg" alt="Kiyoto Cafe"></div>
+        <div class="slide"><img src="img6.jpeg" alt="Us"></div>
+        <div class="slide"><img src="fun.jpeg" alt="Fun times"></div>
+        <div class="slide"><img src="garba 2.jpeg" alt="Garba 2"></div>
+        <div class="slide"><img src="her.jpeg" alt="Her"></div>
+        <div class="slide"><img src="mastii.jpeg" alt="Mastii"></div>
+      </div>
+      <button class="slide-btn slide-prev" id="slidePrev">‹</button>
+      <button class="slide-btn slide-next" id="slideNext">›</button>
+      <div class="slide-dots" id="slideDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════  5 · GALLERY CARDS  ════════════ -->
+<section id="gallery" class="sec rv">
+  <div class="sec-inner">
+    <p class="sec-label">the milestones</p>
+    <h2 class="sec-title">The Big Ones</h2>
+    <hr class="sec-line">
+    <div class="g-grid rv-children">
+
+      <div class="g-card">
+        <div class="g-img">
+          <img src="img1.jpeg" alt="School Days">
+        </div>
+        <div class="g-info"><div class="g-name">School Days</div><p class="g-cap">Where it all started. That chemistry paper, that first conversation — and everything that followed.</p></div>
+      </div>
+
+      <div class="g-card">
+        <div class="g-img">
+          <img src="img3.jpeg" alt="Our First Garba">
+        </div>
+        <div class="g-info"><div class="g-name">Our First Garba</div><p class="g-cap">Dancing with you under those lights — papitaaaa, that memory lives rent-free in my head.</p></div>
+      </div>
+
+      <div class="g-card">
+        <div class="g-img">
+          <img src="img5.jpeg" alt="Kiyoto Cafe">
+        </div>
+        <div class="g-info"><div class="g-name">Kiyoto Cafe ☕</div><p class="g-cap">Our first official date. Bhaut maje aye the. I'd relive that day a thousand times.</p></div>
+      </div>
+
+      <div class="g-card">
+        <div class="g-img">
+          <img src="garba 2.jpeg" alt="Garba Night 2">
+        </div>
+        <div class="g-info"><div class="g-name">Garba Night — Round 2</div><p class="g-cap">We came back for more. Same lights, same energy, but this time we knew — we're unbreakable.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════  5 · COMPATIBILITY SCORE  ══════ -->
+<section id="compat" class="sec rv">
+  <div class="sec-inner">
+    <p class="sec-label">the real question</p>
+    <h2 class="sec-title">Are We Compatible?</h2>
+    <hr class="sec-line">
+    <div class="compat-card">
+      <button class="compat-start" id="compatBtn">Calculate Our Score 💕</button>
+      <div class="compat-loader" id="compatLoader">
+        <div class="compat-loader-bar" id="compatBar"></div>
+      </div>
+      <div class="compat-status" id="compatStatus"></div>
+      <div class="compat-result" id="compatResult">
+        <div class="compat-score" id="compatScore">101%</div>
+        <div class="compat-verdict">Off the charts. Obviously. 💛</div>
+        <div class="compat-metrics">
+          <div class="cm"><div class="cm-label">Bakchodi Level</div><div class="cm-value">9999+</div></div>
+          <div class="cm"><div class="cm-label">Late Night Calls</div><div class="cm-value">∞</div></div>
+          <div class="cm"><div class="cm-label">Sorry Said First</div><div class="cm-value">Rajat 98%</div></div>
+          <div class="cm"><div class="cm-label">Jealousy Meter</div><div class="cm-value">Cute Level</div></div>
+          <div class="cm"><div class="cm-label">Fight Recovery</div><div class="cm-value">&lt; 2 hrs</div></div>
+          <div class="cm"><div class="cm-label">Missing Each Other</div><div class="cm-value">24/7</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════  6 · RELATIONSHIP STATS  ═══════ -->
+<section id="stats" class="sec rv">
+  <div class="sec-inner">
+    <p class="sec-label">by the numbers</p>
+    <h2 class="sec-title">Our Relationship Stats</h2>
+    <hr class="sec-line">
+    <div class="stats-grid rv-children">
+      <div class="stat-card">
+        <span class="stat-emoji">⚔️</span>
+        <div class="stat-number">47+</div>
+        <div class="stat-desc">Fights survived<br>(and came back stronger)</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">😤</span>
+        <div class="stat-number">∞</div>
+        <div class="stat-desc">Times she said "I'm fine"<br>but wasn't fine at all</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">🤗</span>
+        <div class="stat-number">12/day</div>
+        <div class="stat-desc">Minimum hugs needed<br>for survival</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">💌</span>
+        <div class="stat-number">100+</div>
+        <div class="stat-desc">Paragraphs of reassurance,<br>love & meaning sent</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">😴</span>
+        <div class="stat-number">2am</div>
+        <div class="stat-desc">Average time we<br>actually say goodnight</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">🥺</span>
+        <div class="stat-number">98%</div>
+        <div class="stat-desc">Times Rajat said<br>sorry first</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">☕</span>
+        <div class="stat-number">1</div>
+        <div class="stat-desc">Perfect cafe date<br>at Kiyoto</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">💃</span>
+        <div class="stat-number">2</div>
+        <div class="stat-desc">Garba nights that<br>live rent-free</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-emoji">💛</span>
+        <div class="stat-number">730+</div>
+        <div class="stat-desc">Days of loving<br>you and counting</div>
+      </div>
+    </div>
+    <p class="stats-footer">* All stats are 100% certified by chikuu himself</p>
+  </div>
+</section>
+
+<!-- ═══════════════════  7 · REASONS  ══════════════════ -->
+<section id="reasons" class="sec rv">
+  <div class="sec-inner">
+    <p class="sec-label">because you asked why</p>
+    <h2 class="sec-title">30 Reasons I Love You, Papitaaaa</h2>
+    <hr class="sec-line">
+    <div class="r-box" id="rBox">
+      <div class="r-num" id="rNum">Reason 1 of 30</div>
+      <div class="r-text" id="rText"></div>
+      <div class="r-bar-wrap"><div class="r-bar" id="rBar" style="width:3.33%"></div></div>
+      <button class="r-btn" id="rBtn">Next Reason ♥</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════  FINALE  ═══════════════════════ -->
+<section id="finale" class="sec rv">
+  <p class="sec-label">one more thing, papitaaaa</p>
+  <h2 class="sec-title">And One Last Thing...</h2>
+  <hr class="sec-line">
+  <div class="fin-box">
+    <p>There's something I need to tell you... but not here. Not in text. Not on a screen. 🤫<br>This one's for when I see you. In person. Just you and me. 💛</p>
+  </div>
+  <div class="fin-heart">❤️</div>
+  <p class="fin-sign">Happy 2nd Anniversary, papitaaaaa. 💛 — your chikuu</p>
+</section>
+
+<!-- ═══════════════════  SPECIAL MESSAGE  ═══════════════ -->
+<section id="special" class="sec rv" style="background:var(--bg-white);min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+  <p class="sec-label">from the bottom of my heart</p>
+  <h2 class="sec-title">For You, Papitaaaa 💌</h2>
+  <hr class="sec-line">
+  <div style="max-width:620px;margin:0 auto;background:var(--bg-card);border:2px solid var(--pink-pale);border-radius:20px;padding:48px 36px;box-shadow:0 12px 50px rgba(200,100,130,0.1);position:relative;">
+    <p style="font-family:var(--serif);font-size:clamp(16px,3vw,20px);color:var(--text);line-height:2.2;font-weight:400;text-align:left;">
+      Papitaaaaaaaaaaaaaaa... 🥺💛<br><br>
+      I love you soo soo much. Like, you don't even understand how much. No words, no paragraphs, no website will ever be enough to explain what you mean to me. 🫶<br><br>
+      No one  and I mean <em style="color:var(--pink-deep);font-weight:600;">no one</em>  can ever replace you. Not today, not tomorrow, not in any lifetime. You're not just my girlfriend, you're my person. My safe place. My favourite notification. My 2am voice. My everything. 💕<br><br>
+      You are the one I want beside me through every exam, every fight, every boring day, every crazy night, every garba, every chai, every silence, and every storm. 🌙✨<br><br>
+      When I'm with you, I don't need anything else. And when I'm not with you, all I'm doing is waiting to be with you again. That's it. That's the whole truth. 🤍<br><br>
+      So here's my promise, kuchipuchi  I'm not going anywhere. 🫂<br>
+      You're stuck with this chikuu. Forever. And honestly? I wouldn't have it any other way. 😤💛<br><br>
+      <em style="color:var(--pink-deep);">— Hamesha teraaaa Rajat, tera chikuu, tera sonpari. Aaj, kal, hamesha. ♾️❤️</em>
+    </p>
+  </div>
+  <div style="margin-top:32px;font-size:36px;animation:hb 1.4s ease-in-out infinite;">🫶</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
